@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario deportes</title>
+
+	<style type="text/css">
+		
+		label 
+		{
+			color: red;	
+		}
+
+		input[type="button"]
+		{
+			color: blue;
+		}
+
+		input[type="reset"]
+		{
+			color: blue;
+		}
+
+		#submit_button
+		{
+			color: green;
+		}
+
+	</style>
+</head>
+
+<body bgcolor="#C39BD3" align='center'>
+	<form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+		<table border=5 bgcolor="#A9CCE3" align="center" bordercolor="#E5E7E9">
+			<tr>
+				<th colspan='2' style="font-size:200%" align="center">Formulario del usuario</th>
+			</tr>
+
+			<tr>
+				<td style="font-size:150%">Introduzca su nombre</td>
+				<td>
+					<label style='font-size:200%'>
+						<input type="text" name="nombre" required autofocus>
+					</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="font-size:150%">Introduzca su contraseña</td>
+				<td>
+					<label style='font-size:200%'>
+						<input type="password" name="password" required>
+					</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="font-size:150%">Introduzca su direccion</td>
+				<td>
+					<label style='font-size:200%'>
+						<input type="text" name="direccion">
+					</label><br>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="font-size:150%">Elige deportes</td>
+				<td>
+					<label style='font-size:125%'>
+						<input type="checkbox" name="deportes" value="Futbol">Futbol<br>
+					</label>
+
+					<label style='font-size:125%'> 
+						<input type="checkbox" name="deportes" value="Baloncesto">Baloncesto<br>
+					</label>
+
+					<label style='font-size:125%'>
+						<input type="checkbox" name="deportes" value="Rugby">Rugby<br>
+					</label>
+
+					<label style='font-size:125%'>
+						<input type="checkbox" name="deportes" value="Hockey">Hockey<br>
+					</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="font-size:150%">Genero</td>
+				<td>
+					<label style='font-size:125%'>
+						<input type="radio" name="sexo" value="Hombre">Hombre<br>
+					</label>
+
+					<label style='font-size:125%'>
+						<input type="radio" name="sexo" value="Mujer">Mujer<br>
+					</label>
+			
+					<label style='font-size:125%'>
+						<input type="radio" name="sexo" value="No_Binario">No binario<br>
+					</label>
+			
+					<label style='font-size:125%'>
+						<input type="radio" name="sexo" value="Prefiero_no_decirlo">Prefiero no decirlo<br>
+					</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Selecciona tu edad</td>
+				<td>
+					<label style='font-size:200%'>
+						<select name="edad">
+							<option value='---' selected disabled>Seleccione una opcion</option>
+							<option value='17'>17</option>
+							<option value='18'>18</option>
+							<option value='+18'>+18</option>
+						</select><br>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label style='font-size:200%'>
+						<input type="file" name="fichero">
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="button" value='pulsa aqui'>
+					<input type="reset" name="restablecer">
+					<input type="submit" name="submit" id="submit_button">
+				</td>
+			</tr>
+		</table>
+</body>
+</html>
